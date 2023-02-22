@@ -1,0 +1,37 @@
+.productline-container {
+    margin-top: 10px;
+    .productline-content {
+        h1 {
+            text-align: center;
+        }
+        .productline-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            gap: 10px;
+
+            .productline-input-custom {
+                width: 75%;
+                border-radius: 4px;
+            }
+        }
+        .btn-create, .btn-cancel {
+            float: right;
+            width: 30%;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .btn-cancel {
+            margin-right: 5px;
+        }
+    }
+}
+
+.delete-productline-btn, .update-productline-btn {
+    margin-right: 10px;
+    &:hover {
+        color: var(--hover-primary-color);
+        cursor: pointer;
+    }
+}

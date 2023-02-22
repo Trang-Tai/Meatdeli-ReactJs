@@ -1,0 +1,80 @@
+.footer-container {
+    border-top: 4px solid var(--primary-color);
+    padding: 40px 0;
+    margin-top: 20px;
+    .footer-content {
+        .footer-comp-info {
+            img {
+                width: 100px;
+            }
+
+            .footer-comp-icon {
+                margin: 0 5px 0 0;
+                flex: 0 0 5%;
+            }
+
+            .footer-comp-name {
+                display: block;
+                margin: 16px 0;
+            }
+            .footer-comp-location,
+            .footer-comp-contact,
+            .footer-comp-email {
+                display: flex;
+                margin: 5px 0;
+            }
+        }
+
+        .footer-comp-more-info {
+            .footer-comp-more-info-title {
+                font-weight: bold;
+                color: var(--text-color);
+            }
+
+            .footer-comp-more-info-list {
+                font-size: 14px;
+                .footer-comp-more-info-item {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .footer-comp-customer-services {
+            .footer-comp-customer-services-title {
+                font-weight: bold;
+                color: var(--text-color);
+            }
+
+            .footer-comp-customer-services-list {
+                font-size: 14px;
+                .footer-comp-customer-services-item {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .footer-comp-follow-us {
+            .footer-comp-follow-us-title {
+                font-weight: bold;
+                color: var(--text-color);
+            }
+
+            .footer-comp-follow-us-social-network {
+                margin-top: 10px;
+                .footer-comp-follow-us-social-network-list {
+                    display: flex;
+                    .footer-comp-follow-us-social-network-item {
+                        margin-right: 10px;
+                        max-width: 20px;
+                    }
+
+                    .footer-comp-follow-us-social-network-zalo {
+                        .footer-comp-follow-us-social-network-zalo-img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

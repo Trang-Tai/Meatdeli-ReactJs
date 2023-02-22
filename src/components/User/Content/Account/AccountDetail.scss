@@ -1,0 +1,37 @@
+.account-detail-container {
+    .account-detail-content {
+        .account-detail-block {
+            .account-detail-block-title {
+                font-size: 20px;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+                display: block;
+                padding-top: 1px;
+            }
+            .account-detail-block-list {
+                .account-detail-block-item {
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .account-detail-order {
+            .account-detail-order-title {
+                display: block;
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+            .account-detail-order-table {
+
+                .ant-table-body{
+                    overflow: hidden!important;
+                }
+                
+                .ant-table-body:hover{
+                    overflow: scroll!important;
+                }
+            }
+        }
+    }
+}

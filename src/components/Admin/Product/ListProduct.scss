@@ -1,0 +1,34 @@
+.table-product-container {
+    margin-top: 20px;
+    border-top: 1px solid rgb(104, 102, 102);
+    .table-product-title {
+        text-align: center;
+        padding: 10px;
+    }
+    .table-product-filter {
+        margin-bottom: 10px;
+
+        .product-table-actions {
+            display: flex;
+            .select-handle-actions {
+                min-width: 25%;
+                margin-right: 10px;
+            }
+            .handle-action-btn {
+                width: 25%;
+            }
+        }
+
+        .product-filter-container {
+            display: flex;
+            justify-content: space-between;
+            .select-type-product {
+                width: 20%;
+            }
+            
+            .search-text-product {
+                width: 78%;
+            }
+        }
+    }
+}

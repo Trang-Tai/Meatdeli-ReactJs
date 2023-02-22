@@ -1,0 +1,96 @@
+.product-line-container {
+    margin-top: 16px;
+
+    .product-line-content {
+        .product-line-banner {
+            margin-bottom: 40px;
+
+            .slider-customize {
+
+                .slider-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .product-line-slick {
+            background-color: var(--primary-color);
+
+            .slider-customize {
+                padding: 10px;
+                text-align: center;
+
+                .slider-wrap-img {
+                    width: 60%;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    position: relative;
+
+                    .slider-img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                        border-radius: 50%;
+                        scale: 1;
+                    }
+
+                    &:hover {
+                        .slider-img {
+                            scale: 0.93;
+                        }
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-color: green;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 50%;
+                        background: linear-gradient(150deg, var(--primary-color) 60%, #fff);
+                        animation: myRotate 3s infinite linear;
+                    }
+                }
+
+                a {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-line-container {
+        .product-line-content {
+            .product-line-banner {
+                margin-bottom: 10px;
+                .slick-prev,
+                .slick-next {
+                    display: none !important;
+                }
+            }
+
+            .product-line-slick {
+                .slider-customize {
+                    .slider-wrap-img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes myRotate {
+    0% {
+        transform: rotate(-360deg)
+    }
+}

@@ -1,0 +1,48 @@
+.App {
+    .test-content {
+        width: 378px;
+        height: 378px;
+        .product-card-item {
+            margin-top: 8px;
+            margin-bottom: 8px;
+    
+            .product-card-img {
+                width: 100%;
+            }
+    
+            .product-card-name {
+                display: -webkit-box;
+                margin: 10px 0px 5px;
+                font-weight: bold;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                line-height: 24px;
+                text-align: left;
+                color: var(--text-color);
+            }
+    
+            .product-card-price {
+                padding: 0px 0px 8px;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: left;
+    
+                .product-card-price-current {
+                    display: block;
+                    color: var(--primary-color);
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+    
+                .product-card-price-old {
+                    display: block;
+                    color: #666666;
+                    text-decoration: line-through;
+                }
+            }
+    
+            
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.fresh-chicken-container {
+    margin-top: 40px;
+    .fresh-chicken-content {
+        padding: 8px 10px;
+        .fresh-chicken-title {
+            display: inline-block;
+            color: var(--primary-color);
+            padding: 5px 0;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+
+        .fresh-chicken-list {
+            .product-card-list {
+                display: block;
+            }
+        }
+
+        .fresh-chicken-banner {
+            text-align: center;
+            .fresh-chicken-banner-img {
+                width: 100%;
+            }
+        }
+
+        .fresh-chicken-view-all {
+            margin: 16px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fresh-chicken-container {
+        margin-top: 10px;
+        .fresh-chicken-content {
+            .fresh-chicken-list {
+                order: 1;
+            }
+        }
+    }
+}

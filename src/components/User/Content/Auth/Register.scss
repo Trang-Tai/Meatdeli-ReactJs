@@ -1,0 +1,83 @@
+.register-container {
+
+    .register-content {
+        padding: 10px;
+
+        .register-title {
+            padding: 5px 0 10px;
+
+            .register-title-name {
+                display: block;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 10px 0;
+            }
+
+            a {
+                color: var(--primary-color);
+            }
+        }
+
+        .register-account {
+
+            .register-account-title,
+            .register-account-error {
+                display: block;
+                margin: 15px 0;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .register-account-error {
+                color: var(--primary-color);
+            }
+
+            .register-account-item {
+                margin-bottom: 10px;
+
+                .register-account-item-fulfill {
+                    display: grid;
+                    grid-template-columns: 1fr 75%;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .register-account-custom {
+                        border: 1px solid #af9b9b;
+
+                        &.valid-error {
+                            border: 1px solid red;
+                        }
+
+                        &.ant-input-affix-wrapper {
+
+                            &:hover,
+                            &:focus {
+                                border-color: #af9b9b !important;
+                            }
+                        }
+
+                        &.ant-input-affix-wrapper-focused {
+                            border-color: #af9b9b !important;
+                        }
+                    }
+                }
+
+                .register-account-item-error {
+                    position: relative;
+                    left: 25%;
+                    color: red;
+                    font-size: 14px;
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+            }
+        }
+    }
+}

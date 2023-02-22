@@ -1,0 +1,187 @@
+.order-detail-container {
+    .order-detail-content {
+        .order-detail-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            display: block;
+            padding-top: 1px;
+        }
+
+        .order-detail-delivery {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 10px;
+
+            .order-detail-delivery-title {
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                display: block;
+                padding-top: 1px;
+            }
+
+            .order-detail-delivery-block {
+                .order-detail-delivery-name {
+                    font-weight: bold;
+                    padding-right: 5px;
+                }
+
+                .order-detail-delivery-name,
+                .order-detail-delivery-phone {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+
+                .order-detail-delivery-address {
+                    display: block;
+                    font-size: 14px;
+                }
+
+            }
+        }
+
+        .order-detail-product-list {
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            margin-top: 10px;
+
+            .order-detail-product-item {
+                display: grid;
+                grid-template-columns: 20% 1fr;
+                align-items: center;
+                padding: 5px;
+                // border-bottom: 1px solid #e0e0e0;
+                position: relative;
+
+                .order-detail-product-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .order-detail-product-block {
+                    .order-detail-product-name {
+                        display: block;
+                        margin-bottom: 2px;
+                        font-weight: 600;
+                    }
+
+                    .order-detail-product-code {
+                        display: block;
+                        margin-bottom: 2px;
+                    }
+
+                    .order-detail-product-ordered {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .order-detail-product-price {}
+
+                        .order-detail-product-quantity {}
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    height: 1px; //You can change this if you want smaller/bigger borders
+                    width: 80%;
+
+                    position: absolute;
+                    right: 10%;
+                    top: 0; // If you want to set a smaller height and center it, change this value
+
+                    background-color: #e0e0e0; // The color of your border
+                }
+
+                &:first-child {
+                    &::after {
+                        content: unset;
+                    }
+                }
+            }
+        }
+
+        .order-detail-info-payment {
+            .order-detail-info-payment-title {
+                display: block;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                font-size: 18px;
+                color: var(--text-color);
+            }
+
+            .order-detail-info-payment-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .order-detail-info-payment-item {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px;
+                    cursor: pointer;
+                    border: 1px solid #c8c8c8;
+                    border-bottom: none;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+
+                    &:first-child {
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                    }
+
+                    &:last-child {
+                        border-bottom: 1px solid #c8c8c8;
+                        border-bottom-left-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                    }
+                }
+            }
+        }
+
+        .order-detail-cost {
+            margin: 10px 0;
+            .order-detail-shipping-fee,
+            .order-detail-total-fee {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .order-detail-status{
+            .order-detail-ordered-date ,
+            .order-detail-status-order ,
+            .order-detail-payment-date ,
+            .order-detail-shipped-date ,
+            .order-detail-payment-method {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .order-detail-remove-order,
+            .order-detail-finish-order {
+                cursor: pointer;
+                margin-top: 10px;
+                margin-left: 10px;
+                float: right;
+                .ant-btn-default {
+                    &:hover {
+                        color: var(--white-color);
+                        border: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .order-1 {
+        order: 1;
+    }
+}

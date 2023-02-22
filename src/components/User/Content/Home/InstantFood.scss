@@ -1,0 +1,34 @@
+.instant-food-container {
+    margin-top: 40px;
+    .instant-food-content {
+        padding: 8px 10px;
+        .instant-food-title {
+            display: inline-block;
+            color: var(--primary-color);
+            padding: 5px 0;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+
+        .instant-food-banner-img {
+            width: 100%;
+        }
+
+        .instant-food-view-all {
+            margin: 16px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .instant-food-container {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,93 @@
+.header-nav-container {
+    background-color: var(--primary-color);
+
+    .header-nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .header-nav-list-menugroup {
+            display: flex;
+
+            .header-nav-menugroup {
+                padding: 13px 15px;
+                background-color: var(--primary-color);
+                font-size: 16px;
+                font-weight: 500;
+                position: relative;
+
+                a {
+                    color: var(--white-color);
+                }
+
+                &:hover {
+                    background-color: var(--hover-primary-color);
+
+                    .header-nav-list-menu {
+                        display: block;
+                    }
+                }
+
+                .header-nav-list-menu {
+                    display: none;
+                    position: absolute;
+                    top: calc(100%);
+                    left: 0;
+                    background-color: white;
+                    border: 1px solid #dddddd;
+                    width: 350px;
+                    padding: 14px 20px;
+                    white-space: nowrap;
+                    z-index: 1000;
+
+                    .header-nav-menu {
+                        font-weight: 600;
+                        line-height: 24px;
+                        a {
+                            color: var(--text-color);
+                        }
+                        &:hover {
+                            a {
+                                color: var(--primary-color);
+                            }
+                        }
+                        &:has(.header-nav-submenu:hover) {
+                            a {
+                                color: var(--text-color);
+                            }
+                        }
+                        .header-nav-list-submenu {
+                            display: block;
+                            font-weight: 400;
+                            font-size: 14px;
+
+                            .header-nav-submenu {
+                                a {
+                                    color: var(--text-color);
+                                }
+                                &:hover {
+                                    a {
+                                        color: var(--primary-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header-nav-container {
+        .header-nav-content {
+            max-width: 768px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-nav-container {
+        display: none;
+    }
+}

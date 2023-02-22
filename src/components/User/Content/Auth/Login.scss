@@ -1,0 +1,122 @@
+.login-container {
+
+    .login-content {
+        padding: 10px;
+
+        .login-title {
+            padding: 5px 0 10px;
+
+            .login-title-name {
+                display: block;
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 10px 0;
+            }
+
+            a {
+                color: var(--primary-color);
+            }
+        }
+
+        .login-account {
+            padding: 16px 0;
+
+            .login-account-error {
+                display: block;
+                margin: 15px 0;
+                text-align: center;
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+
+            .login-account-item {
+                margin-bottom: 10px;
+
+                .login-account-item-fulfill {
+                    display: grid;
+                    grid-template-columns: 1fr 75%;
+                    align-items: center;
+                    margin-bottom: 5px;
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .login-account-custom {
+                        border: 1px solid #af9b9b;
+
+                        &.valid-error {
+                            border: 1px solid red;
+                        }
+
+                        &.ant-input-affix-wrapper {
+
+                            &:hover,
+                            &:focus {
+                                border-color: #af9b9b !important;
+                            }
+                        }
+
+                        &.ant-input-affix-wrapper-focused {
+                            border-color: #af9b9b !important;
+                        }
+                    }
+                }
+
+                .login-account-item-error {
+                    position: relative;
+                    left: 25%;
+                    color: red;
+                    font-size: 14px;
+                }
+            }
+
+            .forgot-password {
+                font-size: 14px;
+                display: block;
+                margin: 15px 0;
+
+                .forgot-password-link {
+                    cursor: pointer;
+                    color: red;
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+            }
+        }
+
+        .reset-password {
+            .reset-password-title {
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .reset-password-subtitle {
+                display: block;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .btn-refresh-password,
+            .btn-return {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .btn-return {
+                background-color: transparent;
+                color: var(--text-color);
+                &:hover {
+                    color: var(--primary-color)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.manage-user-container {
+    .manage-user-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .manage-user-search {
+            margin-top: 30px;
+            width: 60%;
+            text-align: center;
+            .search-list-user-btn {
+                .ant-input-affix-wrapper {
+                    &:hover {
+                        border-color: var(--primary-color);
+                    }
+                    &:focus {
+                        border-color: var(--primary-color);
+                    }
+                }
+                .ant-btn {
+                    background-color: var(--primary-color);
+                }
+            }
+        }
+        .manage-user-list {
+            width: 90%;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.nav-account-container {
+    .nav-account-content {
+        padding: 10px;
+
+        .nav-account-block {
+            .nav-account-title {
+                display: block;
+                margin-bottom: 7px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .nav-account-current {
+                font-weight: bold;
+                font-size: 14px;
+
+                .nav-account-name {
+                    color: var(--primary-color);
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-bottom: 28px;
+                    display: inline-block;
+                }
+            }
+
+            .nav-account-list {
+                .nav-account-item {
+                    display: block;
+                    margin-bottom: 22px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

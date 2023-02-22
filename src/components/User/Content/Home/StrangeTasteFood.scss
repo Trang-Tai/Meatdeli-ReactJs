@@ -1,0 +1,100 @@
+.strange-taste-food-container {
+    margin-top: 40px;
+
+    .strange-taste-food-content {
+        padding: 8px 10px;
+
+        .strange-taste-food-bars {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+
+            .strange-taste-food-title {
+                display: inline-block;
+                color: var(--primary-color);
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: uppercase;
+                cursor: pointer;
+                white-space: nowrap;
+                padding: 5px 0;
+
+                &:hover {
+                    color: var(--text-color);
+                }
+            }
+
+            .strange-taste-food-filter {
+                .strange-taste-food-filter-list {
+                    display: flex;
+                    justify-content: flex-end;
+                    max-width: 100%;
+                    overflow-x: auto;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+
+                    .strange-taste-food-filter-item {
+                        display: block;
+                        font-size: 14px;
+                        background-color: #eeeeee;
+                        padding: 8px 16px;
+                        border-radius: 99px;
+                        border: 1px solid #eeeeee;
+                        color: var(--text-color);
+                        margin-right: 5px;
+                        white-space: nowrap;
+                        cursor: pointer;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &.active {
+                            background-color: var(--primary-color);
+                            color: white;
+                        }
+
+                        &:hover {
+                            &:not(.active) {
+                                background-color: transparent;
+                                color: var(--primary-color);
+                                border: 1px solid var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .strange-taste-food-banner-img {
+            width: 100%;
+        }
+
+        .strange-taste-food-view-all {
+            margin: 16px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .strange-taste-food-container {
+        .strange-taste-food-content {
+            .strange-taste-food-bars {
+                .strange-taste-food-filter {
+                    .strange-taste-food-filter-list {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .strange-taste-food-container {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,128 @@
+.spec-food-container {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 40px;
+
+    .spec-food-content {
+        background-color: var(--white-color);
+        border-radius: 5px;
+        padding: 8px 10px;
+
+        .spec-food-title {
+            display: inline-block;
+            color: var(--primary-color);
+            padding: 5px 0;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+
+        .spec-food-list {
+            .spec-food-item {
+                margin-top: 10px;
+                .spec-food-img {
+                    width: 100%;
+                }
+
+                .spec-food-name {
+                    display: -webkit-box;
+                    margin: 10px 10px 5px;
+                    font-weight: bold;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                    line-height: 24px;
+                }
+
+                .spec-food-price {
+                    padding: 0px 10px 8px;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .spec-food-price-current {
+                        display: block;
+                        color: var(--primary-color);
+                        font-weight: bold;
+                        margin-right: 5px;
+                    }
+
+                    .spec-food-price-old {
+                        display: block;
+                        color: #666666;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .spec-food-order {
+                    padding: 0;
+                    display: flex;
+
+                    .spec-food-order-decrease {
+                        padding: 8px;
+                        background-color: transparent;
+                        border: none;
+                    }
+
+                    .spec-food-order-quantity {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        color: var(--primary-color);
+                        text-align: center;
+
+                        &:focus {
+                            border: none;
+                        }
+
+                        &::-webkit-inner-spin-button,
+                        &::-webkit-outer-spin-button {
+                            display: none;
+                            margin: 0;
+                        }
+                    }
+
+                    .spec-food-order-increase {
+                        padding: 8px;
+                        background-color: transparent;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .spec-food-view-all {
+            margin: 16px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .spec-food-container {
+        margin-top: 10px;
+        padding: 0;
+
+        .spec-food-content {
+            .spec-food-list {
+                display: grid;
+                grid-template-columns: repeat(5, 40%);
+                grid-template-rows: 1fr;
+                overflow-x: auto;
+
+                .mobile-spec-food-item {
+                    max-width: 100%;
+                }
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+    }
+}

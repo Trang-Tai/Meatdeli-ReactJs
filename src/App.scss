@@ -1,0 +1,203 @@
+@import 'normalize.css';
+@import 'antd/dist/reset.css';
+
+$fa-font-path : "~@fortawesome/fontawesome-free-webfonts/webfonts";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands.scss";
+
+@import 'react-markdown-editor-lite/lib/index.css';
+@import './scss/grid.scss';
+@import './scss/reactSlick.scss';
+@import './scss/common.scss';
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    /*màu này dùng để đọc trên website để giảm độ tương phản nhằm tránh mỏi mắt*/
+    --primary-color: #e4222e;
+    --hover-primary-color: #cd1f29;
+    --border-color: #dbdbdb;
+
+    --header-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --hover-primary-color: #cd1f29;
+        --header-height: 30px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+
+    &:hover {
+        background: var(--hover-primary-color);
+    }
+}
+
+ul,
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.custom-btn {
+    padding: 8px 16px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+}
+
+.no-item-btn {
+    border: 1px solid #b6b6b6;
+    color: #b6b6b6;
+    &:hover {
+        background-color: #b6b6b6;
+        color: var(--white-color);
+    }
+}
+
+// header table antd css
+.ant-table-thead {
+    .ant-table-cell {
+        background-color: var(--primary-color) !important;
+
+        &:hover {
+            background-color: var(--hover-primary-color) !important;
+        }
+    }
+}
+
+// body antd table 
+.ant-table-cell-row-hover {
+    background-color: #e4232d2d !important;
+}
+
+.ant-table-row-selected {
+    .ant-table-cell {
+        background-color: #e4232d2d !important;
+    }
+}
+
+// checkbox table
+.ant-checkbox-inner {
+    // background-color: var(--primary-color) !important;
+    // border-color: var(--primary-color) !important;
+}
+
+// pagination table css antd
+.ant-pagination-item-active {
+    border-color: var(--primary-color) !important;
+
+    a {
+        color: var(--primary-color) !important;
+    }
+}
+
+// InputNumber antd css
+.ant-input-number-group-addon {
+    background-color: var(--primary-color) !important;
+    width: 10% !important;
+}
+
+// Input antd css
+.ant-input-search-button {
+    background-color: var(--primary-color) !important;
+}
+
+.ant-input-affix-wrapper {
+
+    &:hover,
+    &:focus {
+        border-color: var(--primary-color) !important;
+    }
+}
+
+.ant-input-affix-wrapper-focused {
+    border-color: var(--primary-color) !important;
+}
+
+// Select antd css
+.ant-select-selector {
+    &:hover {
+        border-color: var(--primary-color) !important;
+    }
+}
+
+.ant-select-focused {
+    .ant-select-selector {
+        border-color: var(--primary-color) !important;
+    }
+}
+
+// radio
+.ant-radio-checked {
+    .ant-radio-inner {
+        border-color: var(--primary-color) !important;
+        background-color: var(--primary-color) !important;
+
+        &::after {
+            width: 12px;
+            height: 12px;
+            margin-block-start: -6px;
+            margin-inline-start: -6px;
+        }
+    }
+}
+
+// custom radio btn antd
+.ant-radio-wrapper {
+    &:last-child {
+        &::after {
+            content: none;
+        }
+
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}

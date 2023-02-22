@@ -1,0 +1,97 @@
+.manage-order-container {
+
+    .manage-order-content {
+
+        .manage-order-filter {
+            margin-top: 15px;
+
+            .manage-order-filter-list {
+                display: flex;
+                justify-content: center;
+                overflow-x: scroll;
+
+                -ms-overflow-style: none;
+                /* Internet Explorer 10+ */
+                scrollbar-width: none;
+                /* Firefox */
+
+                &::-webkit-scrollbar {
+                    display: none;
+                    /* Safari and Chrome */
+                }
+
+                .manage-order-filter-item {
+                    white-space: nowrap;
+                    border: 1px solid var(--primary-color);
+                    padding: 5px 15px;
+                    border-radius: 15px;
+                    margin-right: 10px;
+                    color: var(--text-color);
+
+                    &.active {
+                        background-color: var(--primary-color);
+                        color: white;
+                    }
+
+                    &:hover {
+                        background-color: var(--primary-color);
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .manage-order-list {
+            .manage-order-item {
+                margin-top: 10px;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: 15px;
+                box-shadow: 1px 1px 10px 1px red inset;
+                padding: 10px;
+
+                .manage-order-product-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 2px;
+                    text-align: center;
+
+                    .manage-order-product-img {
+                        width: 40px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .manage-order-product-name {
+                    }
+
+                    .manage-order-product-quantity {}
+                }
+
+                .manage-order-customer-info {
+                    .manage-order-customer-name,
+                    .manage-order-customer-phone,
+                    .manage-order-customer-address {
+                        display: grid;
+                        grid-template-columns: 25px 1fr;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .manage-order-container {
+        .manage-order-content {
+            .manage-order-filter {
+                .manage-order-filter-list {
+                    justify-content: flex-start;
+                }
+            }
+        }
+    }
+}

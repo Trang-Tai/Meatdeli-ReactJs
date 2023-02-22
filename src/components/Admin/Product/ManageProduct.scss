@@ -1,0 +1,76 @@
+.product-container {
+    margin-top: 10px;
+
+    .product-content {
+        h1 {
+            text-align: center;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+
+            .product-input-custom, .product-item-image {
+                width: 75%;
+                border-radius: 4px;
+            }
+
+            .product-item-image {
+                display: flex;
+                align-items: center;
+
+                .label-upload-img {
+                    background-color: #2e8df1;
+                    padding: 10px 15px;
+                    margin-right: 10px;
+                    border-radius: 2px;
+                }
+                .product-image-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .preview-product-image {
+                        position: relative;
+                        width: 85px;
+                        height: 65px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .image-delete-icon {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            transform: translateX(30%) translateY(-30%);
+                            background-color: white;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-create,
+        .btn-cancel {
+            float: right;
+            width: 30%;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        .btn-cancel {
+            margin-right: 5px;
+        }
+    }
+}
+
+.delete-product-btn,
+.update-product-btn {
+    margin-right: 10px;
+
+    &:hover {
+        color: var(--hover-primary-color);
+        cursor: pointer;
+    }
+}

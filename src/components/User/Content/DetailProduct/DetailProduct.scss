@@ -1,0 +1,158 @@
+.detail-product-container {
+    margin-top: 40px;
+
+    .detail-product-content {
+        padding: 8px 10px;
+
+        .detail-product-title {
+            display: inline-block;
+            color: var(--primary-color);
+            padding: 5px 0;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--text-color);
+            }
+        }
+
+        .detail-product-slider {
+            .detail-product-slider-item {
+                .detail-product-slider-item-img {
+                    width: 100%;
+                }
+            }
+
+            --custom-position: 75px;
+
+            .slick-dots {
+                position: unset;
+
+                .slick-active {
+                    .detail-product-mini-slider {
+                        border: 1px solid var(--primary-color);
+                    }
+                }
+
+                .detail-product-mini-slider {
+                    width: var(--custom-position);
+                    height: var(--custom-position);
+                    border-radius: 5px;
+                    border: 1px solid rgb(196, 192, 192);
+                    // max-width: 150px;
+                }
+            }
+
+            .slick-prev,
+            .slick-next {
+                position: absolute;
+                top: calc(50% - (var(--custom-position))/2);
+                transform: translateY(-50%);
+            }
+        }
+
+        .detail-product-name {
+            font-size: 24px;
+            margin-bottom: 8px;
+            margin-top: 15px;
+            display: block;
+        }
+
+        .detail-product-status {
+            font-size: 14px;
+        }
+
+        .detail-product-buy-section {
+            .product-card-price {
+                display: flex;
+                margin: 16px 0;
+                padding: 8px 10px;
+                align-items: baseline;
+
+                .product-card-price-current {
+                    display: block;
+                    font-size: 24px;
+                    margin-right: 10px;
+                    color: var(--primary-color);
+                }
+
+                .product-card-price-old {
+                    display: block;
+                    text-decoration: line-through;
+                }
+            }
+
+            .detail-product-order-quantity {}
+
+            .product-card-order {
+                display: flex;
+                padding: 0;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 50%;
+
+                .product-card-order-decrease {
+                    padding: 8px;
+                    background-color: transparent;
+                    border: none;
+                }
+
+                .product-card-order-quantity {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: var(--primary-color);
+                    text-align: center;
+
+                    &:focus {
+                        border: none;
+                    }
+
+                    &::-webkit-inner-spin-button,
+                    &::-webkit-outer-spin-button {
+                        display: none;
+                        margin: 0;
+                    }
+                }
+
+                .product-card-order-increase {
+                    padding: 8px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+
+            .product-card-no-quantity {}
+        }
+
+        .detail-product-description {
+            .detail-product-description-title {
+                display: inline-block;
+                font-size: 24px;
+                color: var(--primary-color);
+                margin: 30px 0 20px;
+            }
+
+            .detail-product-description-content {
+                text-align: justify;
+                color: var(--text-color);
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail-product-container {
+        margin-top: 10px;
+        .detail-product-content {
+            .detail-product-buy-section {
+                .product-card-order {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

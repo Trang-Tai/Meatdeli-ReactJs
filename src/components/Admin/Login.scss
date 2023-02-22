@@ -1,0 +1,88 @@
+.login-container {
+    .login-content {
+        .login-img {
+            background-color: #eaf0fa;
+            background-image: url('../../assets/login_banner.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            background-size: 500px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding-top: 60px;
+            text-align: center;
+            width: 70%;
+
+            .form-title {
+                font-size: large;
+                font-weight: 700;
+            }
+
+            .form-error-message {
+                text-align: left;
+                color: #e83c19;
+                background-color: #f9e7e7;
+                padding: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                display: none;
+                &.active {
+                    display: unset;
+                }
+            }
+
+            input {
+                margin-top: 10px;
+                padding: 9px 5px;
+                outline: none;
+                border: 1px solid #e0e0e0;
+                border-radius: 6px;
+
+                &:focus {
+                    outline: 1px solid #1677ff;
+                }
+            }
+
+            .username-login-inp {}
+
+            .pass-login-inp {}
+
+            .form-forgot-pass {
+                text-align: left;
+                margin-top: 7px;
+                margin-bottom: 25px;
+                font-size: 12px;
+                color: var(--text-color);
+
+                &:hover {
+                    color: #1677ff;
+                }
+            }
+
+            .btn-login {}
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        .login-content {
+            .login-img {
+                height: 20vh;
+                background-size: 160px;
+            }
+
+            .login-form {
+                padding-top: 30px;
+
+                .form-forgot-pass {
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

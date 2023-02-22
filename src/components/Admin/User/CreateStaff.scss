@@ -1,0 +1,46 @@
+.staff-creation-container {
+    margin-top: 10px;
+    .staff-creation-content {
+        h1 {
+            text-align: center;
+        }
+        .staff-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 10px;
+            gap: 10px;
+
+            .staff-input-custom {
+                width: 75%;
+                border-radius: 4px;
+            }
+
+            .preview-image-container {
+                float: left;
+                width: 75%;
+                display: flex;
+                align-items: center;
+
+                .label-upload-img {
+                    background-color: #2e8df1;
+                    padding: 10px 15px;
+                    margin-right: 10px;
+                    border-radius: 2px;
+                }
+                .preview-image-content {
+                    width: 100px;
+                    height: 65px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        .btn-create {
+            float: right;
+            width: 30%;
+            height: 40px;
+            margin-top: 10px;
+        }
+    }
+}

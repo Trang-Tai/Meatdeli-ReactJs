@@ -1,0 +1,61 @@
+.fulfill-container {
+    .fulfill-content {
+        .fulfill-order-status {
+            .fulfill-order-status-title {
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .fulfill-img {
+                text-align: center;
+
+                .fulfill-img-status {
+                    // background-image: url('../../../../assets/check.png');
+                    // animation: failed 3s steps(1, end) 2;
+                    height: 190px;
+                    width: 190px;
+                    // border: 1px solid green;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .fulfill-return-list {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+
+                .filfill-return-item {
+                    .custom-btn {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes success {
+    0% {
+        background-image: url('../../../../assets/check.gif');
+    }
+
+    100% {
+        background-image: url('../../../../assets/check.png');
+    }
+}
+
+@keyframes failed {
+    0% {
+        background-image: url('../../../../assets/cross.gif');
+    }
+
+    100% {
+        background-image: url('../../../../assets/cross.png');
+    }
+}
