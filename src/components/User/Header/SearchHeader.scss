@@ -520,7 +520,7 @@
                 width: 35%;
                 border-radius: 0;
                 z-index: 100;
-                transform: translateX(0%);
+                transform: translateX(-100%);
                 transition: transform linear 0.5s;
 
                 .nav-list-mobile {
@@ -641,9 +641,9 @@
                 }
 
                 .header-with-search {
-                    &:has(.nav-mobile) {
+                    .header-nav-mobile {
                         .nav-mobile {
-                            // transform: translateX(0%);
+                            transform: translateX(0%);
                         }
                     }
                 }
