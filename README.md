@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# **Introduction**
+-   This is a e-Commerce project with MERN (MySQL, Express, ReactJs, NodeJs)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Page**
+#### _(Admin section)_
 
-## Available Scripts
+-   Login.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679042485/Meatdeli/Readme/login-admin_onenal.png)
+-   Manage users.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679043279/Meatdeli/Readme/manage-users_oy0ss9.png)
+-   Manage products.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679043558/Meatdeli/Readme/manage-product_lt0ilt.png)
+-   Manage orders.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679045409/Meatdeli/Readme/manage-orders_leiswx.png)
+-   Print invoice.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679051397/Meatdeli/Readme/bill_lhzajy.png)
+#### _(User section)_
+-   Home.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679045999/Meatdeli/Readme/home_u47djh.png)
+-   Login.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679048268/Meatdeli/Readme/login_pa4z5l.png)
+-   Register.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679048144/Meatdeli/Readme/login_iodar5.png)
+-   Forget password.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679048461/Meatdeli/Readme/reset-pass_xcz0na.png)
+-   Sort products.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679049030/Meatdeli/Readme/sort_ztkk28.png)
+-   Cart.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679046700/Meatdeli/Readme/cart_zzcrnd.png)
+-   Payment.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679046854/Meatdeli/Readme/payment_z7nr9n.png)
+-   Profile.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679047192/Meatdeli/Readme/Profile_btysfn.png)
+-   Order Detail.
+![](https://res.cloudinary.com/dly4liyhf/image/upload/v1679047428/Meatdeli/Readme/order_detail_dk4q76.png)
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# **Features**
+##### _common_
+-   Responsive
+##### _admin_
+-   Sign in, log out.
+-   Change user information (except password and email).
+-   Block user and delete user.
+-   Create, update, delete product.
+-   Search (user, product, order).
+-   Confirm order.
+-   Print invoice.
+##### _user_
+-   Sign in, log out.
+-   Send a new password by email in case of forgetting password.
+-   Update profile.
+-   Search, filter, sort products.
+-   Add products to cart.
+-   Pay the bill with cash or VnPay wallet.
